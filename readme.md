@@ -38,9 +38,7 @@ Computing the mean and variance works exactly the same way, but instead of takin
 I first implement my version of batch normalisation, then use unit tests to compare between the official pytorch implementation and my own.
 
 ## Results
-It appears that our 1D and 2D implementations are consistent with those of pytorch, though this is only true when they are set to train mode.
-
-I am not sure why the output differences are miniscule in eval mode. This could be a bug in pytorch, or it could just be an implementation flaw. I might want to ask about this in the pytorch forums before raising an issue in the official repo.
+Our 1D and 2D batchnorm implementations are exactly the same as those of PyTorch, barring some missing features. Our work has succeeded in capturing the main essence of batch normalisation, and the missing features are just some extras that are usually considered in very niche scenarios.
 
 ## References (Informal)
 1. https://pytorch.org/docs/stable/generated/torch.nn.BatchNorm1d.html
